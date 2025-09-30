@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom'; // ✅ should be react-router-dom
+import { Link } from 'react-router'; // ✅ should be react-router-dom
 import { Menu, X, Leaf } from 'lucide-react';
 
 export default function Navbar() {
