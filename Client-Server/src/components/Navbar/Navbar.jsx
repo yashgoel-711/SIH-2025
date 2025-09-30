@@ -55,21 +55,21 @@ export default function Navbar() {
           <div className="md:hidden pb-4">
             <div className="flex flex-col space-y-3">
               <Link
-                to="/home"
+                to="/"
                 className="text-gray-700 hover:text-green-600 transition-colors duration-200 font-medium py-2"
                 onClick={() => setIsOpen(false)}
               >
                 Home
               </Link>
               <Link
-                to="/about"
+                to="about"
                 className="text-gray-700 hover:text-green-600 transition-colors duration-200 font-medium py-2"
                 onClick={() => setIsOpen(false)}
               >
                 About
               </Link>
               <Link
-                to="/dashboard"
+                to="dashboard"
                 className="bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700 transition-colors duration-200 font-medium text-center"
                 onClick={() => setIsOpen(false)}
               >
