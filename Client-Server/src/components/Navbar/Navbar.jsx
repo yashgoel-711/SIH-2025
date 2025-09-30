@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom'; // ✅ should be react-router-dom
 import { Menu, X, Leaf } from 'lucide-react';
 
 export default function Navbar() {
@@ -19,24 +19,24 @@ export default function Navbar() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <a
-              href="/"
+            <Link
+              to="/"
               className="text-gray-700 hover:text-green-600 transition-colors duration-200 font-medium"
             >
               Home
-            </a>
-            <a
-              href="about"
+            </Link>
+            <Link
+              to="/about"
               className="text-gray-700 hover:text-green-600 transition-colors duration-200 font-medium"
             >
               About
-            </a>
-            <a
-              href="dashboard"
+            </Link>
+            <Link
+              to="/dashboard"
               className="bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700 transition-colors duration-200 font-medium"
             >
               Dashboard
-            </a>
+            </Link>
           </div>
 
           {/* Mobile menu button */}
@@ -62,14 +62,14 @@ export default function Navbar() {
                 Home
               </Link>
               <Link
-                to="about"
+                to="/about"
                 className="text-gray-700 hover:text-green-600 transition-colors duration-200 font-medium py-2"
                 onClick={() => setIsOpen(false)}
               >
                 About
               </Link>
               <Link
-                to="dashboard"
+                to="/dashboard"
                 className="bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700 transition-colors duration-200 font-medium text-center"
                 onClick={() => setIsOpen(false)}
               >
